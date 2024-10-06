@@ -10,7 +10,7 @@ const BestCourse = () => {
                     <h1 className=' text-[#5147F5] font-[poppins] font-bold text-sm tracking-[.25em] uppercase py-2'>Best Course</h1>
                     <h1 className=' md:text-[35px] text-2xl font-[poppins] font-bold'>Featured Course On This Month</h1>
                 </div>
-                <div className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10">
+                <div className=" grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 gap-y-20 md:gap-y-10">
                     {
                         BestcourseCardApi.map((e,index)=>(
                             <>

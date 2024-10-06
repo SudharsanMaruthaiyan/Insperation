@@ -15,7 +15,7 @@ const BestCourseCard = ({
       <div>
         <div className=" pt-32">
           <div className=" bg-white shadow-2xl border rounded-3xl px-8 pb-4 py-5 relative group hover:border-[#4F5DE4] transition-all">
-            <div className=" absolute -top-36 right-0 ">
+            <div className=" absolute -top-48 right-0 md:-top-36 md:right-0 ">
               <div className=" relative bg-[#e6e6e899] rounded-full p-3">
                 <img src={image} alt="Course_image" className=" rounded-2xl" />
                 <div className=" hover:cursor-pointer absolute top-[30%] -left-5">
