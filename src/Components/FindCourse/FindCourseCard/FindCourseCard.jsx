@@ -6,7 +6,7 @@ const FindCourseCard = ({float,name,lesson,price,cart,rating,student,profile,ima
     <>
         <div>
             <div className=" pt-32">
-                <div className=" bg-white shadow-2xl border rounded-3xl px-8 pb-4 pt-44 relative">
+                <div className=" bg-white shadow-2xl border rounded-3xl px-8 pb-4 lg:pt-24 xl:pt-44 2xl:pt-56 pt-[120px] relative">
                     <div className=" absolute -top-36 left-0 ">
                         <div className=" relative p-3">
                             <img src={image} alt="Course_image" className=" rounded-2xl" />
@@ -40,11 +40,11 @@ const FindCourseCard = ({float,name,lesson,price,cart,rating,student,profile,ima
                         <div className=" flex items-center gap-4">
                             <div className=" flex items-center gap-1">
                                 <UserRound className=" w-5 fill-[#2682F9] stroke-[#2682F9]"/>
-                                <p className=" font-[poppins] text-slate-600">{student}</p>
+                                <p className=" font-[poppins] text-slate-600 text-nowrap">{student}</p>
                             </div>
                             <div className=" flex items-center gap-1">
                                 <Folders className=" w-5 fill-[#2682F9] stroke-[#2682F9]"/>
-                                <p className=" font-[poppins] text-slate-600">{lesson}</p>
+                                <p className=" font-[poppins] text-slate-600 text-nowrap">{lesson}</p>
                             </div>
                         </div>
                         <div className=" py-4">
