@@ -5,10 +5,10 @@ const BestCourse2Card = ({float,review,image,title,profile,name,domain,lesson,pr
         <div>
             <div className="">
                 <div className=" bg-white shadow-2xl border rounded-3xl pb-5 relative group transition-all">
-                    <div className="  -top-36 left-0 w-full ">
+                    <div className="  -top-36 left-0 w-full">
                         <div className=" relative z-50">
                             <img src={image} alt="Course_image" className="w-full rounded-t-3xl rounded-b-[60%] z-50" />
-                            <div className=" absolute w-full h-52 bg-[#F57005] group-hover:bg-[#4F5DE4] top-[105px] rounded-b-full -z-10 left-0 transition-colors">
+                            <div className=" absolute w-full h-full  bg-[#F57005] group-hover:bg-[#4F5DE4] top-[20px] rounded-b-full -z-10 left-0 transition-colors rounded-t-3xl">
                             </div>
                             <div className=" hover:cursor-pointer absolute top-5 left-5">
                                 <Heart className=" w-11 h-11 shadow-lg border p-2 rounded-full stroke-white bg-[#F57005] hover:bg-[#4F5DE4] transition-colors" />
@@ -16,7 +16,7 @@ const BestCourse2Card = ({float,review,image,title,profile,name,domain,lesson,pr
                         </div>
                     </div>
 
-                    <div className=" px-8 pt-10">
+                    <div className=" px-8 pt-10 ">
                         <p className=" bg-[#4F5DE4] text-white px-2 py-1 w-fit rounded-md font-bold  font-[poppins] text-sm">
                             {float}
                         </p>
