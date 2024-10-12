@@ -1,11 +1,11 @@
 import { ArrowRight, CalendarRange, CuboidIcon, Search, Star, User } from "lucide-react";
-import {heroimg, home_img,home_img2,home_img3,suganth,} from "../../assets/Api/image";
+import {hero_img, heroimg, home_img,home_img2,home_img3,suganth,} from "../../assets/Api/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export const Homepage = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
@@ -13,10 +13,37 @@ export const Homepage = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 25601,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1441,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1026,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
@@ -41,32 +68,32 @@ export const Homepage = () => {
   return (
     <>
       <div className=" max-w-[100%] mx-auto">
-        <div className=" w-[90%] mx-auto ">
-          <div className=" grid grid-cols-1 xl:grid-cols-3 gap-4">
+        <div className=" w-[90%] mx-auto z-50">
+          <div className=" grid grid-cols-1 xl:grid-cols-3 gap-4 z-50">
             <div className=" xl:col-span-2">
-              <div className=" bg-[rgb(255,221,116)] lg:pt-24 lg:pb-44 rounded-2xl md:px-12 px-5 py-10">
+              <div className=" bg-[rgb(255,221,116)] lg:pt-24 lg:pb-44 rounded-2xl md:px-12 px-5 py-10 z-40">
                 <h1 className=" font-[poppins] font-bold leading-tight lg:text-[50px] text-2xl">
                   Start distant learning <br /> free from the world’s <br />{" "}
                   best institutions
                 </h1>
-                <p className=" font-[poppins] text-slate-800 py-8 lg:pr-48 text-sm md:text-base">
+                <p className=" font-[poppins] text-slate-800 py-8 lg:pr-48 text-sm md:text-base relative z-40">
                   Flexible easy to access learning opportunities can bring a
                   significant change in how individuals prefer to learn! The
                   Edvik can offer you to enjoy the beauty of eLearning!
                 </p>
-                <div className=" relative">
+                <div className=" relative z-40">
                   <input
                     type="text"
                     className=" w-full bg-white border-none  outline-none py-5 shadow-2xl px-3 rounded-md "
                     placeholder="what do you want to learn today?"
                   />
-                  <div className=" absolute top-2 right-2">
+                  <div className=" absolute top-2 right-2 ">
                     <button className=" flex items-center font-bold font-[poppins] bg-[#987BEF] px-5 py-3 hover:bg-[#EC7937] hover:text-white transition-colors gap-2 rounded-md">
                       Search Now <Search className=" w-5" />
                     </button>
                   </div>
                 </div>
-                <div className=" flex items-center gap-5 md:space-x-[70px] space-x-[70px] py-8">
+                <div className=" flex items-center gap-5 md:space-x-[70px] space-x-[70px] py-8 z-40 relative">
                   <div className=" flex items-center relative">
                     <div className=" bg-[#014BAE] w-fit rounded-full p-[1.2px]">
                       <img
@@ -114,7 +141,7 @@ export const Homepage = () => {
                 <h1 className=" pb-5 font-[poppins] font-bold lg:text-[23px] text-base">
                   Featured Course
                 </h1>
-                <div className=" w-full">
+                <div className="slider-container pt-3">
                   <Slider {...settings} className="">
                     <div className="relative overflow-hidden group transition p-2">
                       <div className="">
@@ -257,22 +284,26 @@ export const Homepage = () => {
                   </Slider>
                 </div>
               </div>
-              <div className=" flex items-start gap-5 pt-3">
-                <div className=" bg-[#EC7937] p-5 w-fit rounded-lg">
+              {/* flex items-start md:gap-2 gap-1 pt-3 */}
+              <div className=" grid grid-cols-1 md:grid-cols-2 md:gap-3 gap-1 md:mt-2 mt-2">
+                <div className=" bg-[#EC7937] p-5 py-10 w-fit rounded-lg h-fit">
                   <CuboidIcon className=" w-14 h-14 stroke-white stroke-1"/>
-                  <h1 className=" font-[poppins] font-bold lg:text-[28px] text-white pt-4">1.2k+</h1>
+                  <h1 className=" font-[poppins] font-bold text-[28px] text-white pt-4">1.2k+</h1>
                   <p className=" font-[poppins] py-3 text-white">Career Development Certification Couse For Future Career</p>
                   <div className=" group ">
                     <button className=" flex items-center text-[#FFCA4B] font-bold font-[poppins] gap-1">Learn More <ArrowRight className=" group-hover:translate-x-3 transition-all w-5"/> </button>
                   </div>
                 </div>
-                <div>
-                  <div>
-                    <img src={heroimg} alt="" className=" rounded-lg"/>
+                <div className="">
+                  <div className=" h-fit">
+                    <img src={heroimg} alt="" className=" rounded-lg lg:w-[] md:w-[]"/>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div className=" absolute top-[27.5%] right-5 md:top-40 md:right-[8%] lg:right-[14%] lg:top-40 xl:top-40 xl:right-[40%] 2xl:top-32 z-10">
+            <img src={hero_img} alt="home_image" className=" w-[200px] lg:w-full -z-10"/>
           </div>
         </div>
       </div>

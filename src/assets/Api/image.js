@@ -57,3 +57,7 @@ export const home_img3="https://ik.imagekit.io/jjyo3gsee/Echooling/home-logo-3.p
 
 export const sideblub = "https://ik.imagekit.io/jjyo3gsee/HI-Study/image/bulb-6.png?updatedAt=1724605662409"
 export const heroimg="https://ik.imagekit.io/jjyo3gsee/Insperation%20Image/Opportunity/hero-img-4.webp?updatedAt=1728218772643"
+
+export const badge = "https://ik.imagekit.io/jjyo3gsee/Insperation%20Image/Opportunity/badge.svg?updatedAt=1728218731652"
+
+export const hero_img="https://ik.imagekit.io/jjyo3gsee/Insperation%20Image/Opportunity/home-page-1.webp?updatedAt=1728756609062"

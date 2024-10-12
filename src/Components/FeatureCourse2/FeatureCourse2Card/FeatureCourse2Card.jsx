@@ -30,7 +30,7 @@ const FeatureCourse2Card = ({float,review,image,title,profile,name,domain,lesson
                         </h1>
                         <div className=" bg-[#F1F2FD] px-3 py-3 rounded-lg flex items-center justify-between">
                             <div className=" flex items-center gap-2">
-                                <img src={profile} alt="Course_profile_image" className="" />
+                                <img src={profile} alt="Course_profile_image" className=" hidden md:block" />
                                 <div>
                                 <p className=" font-[poppins] text-base font-bold">{name}</p>
                                 <p className=" font-[poppins] text-slate-600 text-sm">{domain}</p>
@@ -38,7 +38,7 @@ const FeatureCourse2Card = ({float,review,image,title,profile,name,domain,lesson
                             </div>
                             <div>
                             <p className=" font-[poppins] font-bold text-lg text-[#2682F9]">{price}</p>
-                            <p className=" font-[poppins] text-base text-[#F57005]">{lesson}</p>
+                            <p className=" font-[poppins] md:text-base text-sm text-[#F57005]">{lesson}</p>
                             </div>
                         </div>
                     </div>
