@@ -1,8 +1,10 @@
 import { ArrowRight, CalendarRange, CuboidIcon, Search, Star, User } from "lucide-react";
-import {hero_img, heroimg, home_img,home_img2,home_img3,suganth,} from "../../assets/Api/image";
+import {badge, hero_img, heroimg, home_img,home_img2,home_img3,suganth,} from "../../assets/Api/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import SampleNextArrow from "./SampleNextArrow/SampleNextArrow";
+import SamplePrevArrow from "./SamplePrevArrow/SamplePrevArrow";
 export const Homepage = () => {
   var settings = {
     dots: false,
@@ -11,6 +13,8 @@ export const Homepage = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
+    nextArrow: <SampleNextArrow/>,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 25601,
@@ -284,19 +288,27 @@ export const Homepage = () => {
                   </Slider>
                 </div>
               </div>
-              {/* flex items-start md:gap-2 gap-1 pt-3 */}
-              <div className=" grid grid-cols-1 md:grid-cols-2 md:gap-3 gap-1 md:mt-2 mt-2">
-                <div className=" bg-[#EC7937] p-5 py-10 w-fit rounded-lg h-fit">
-                  <CuboidIcon className=" w-14 h-14 stroke-white stroke-1"/>
-                  <h1 className=" font-[poppins] font-bold text-[28px] text-white pt-4">1.2k+</h1>
-                  <p className=" font-[poppins] py-3 text-white">Career Development Certification Couse For Future Career</p>
-                  <div className=" group ">
-                    <button className=" flex items-center text-[#FFCA4B] font-bold font-[poppins] gap-1">Learn More <ArrowRight className=" group-hover:translate-x-3 transition-all w-5"/> </button>
+              <div className=" relative">
+                <div className=" grid grid-cols-1 md:grid-cols-2 md:gap-3 gap-1 md:mt-2 mt-2">
+                  <div className=" bg-[#EC7937] p-5 py-10 w-fit rounded-lg h-fit">
+                    <CuboidIcon className=" w-14 h-14 stroke-white stroke-1"/>
+                    <h1 className=" font-[poppins] font-bold text-[28px] text-white pt-4">1.2k+</h1>
+                    <p className=" font-[poppins] py-3 text-white">Career Development Certification Couse For Future Career</p>
+                    <div className=" group ">
+                      <button className=" flex items-center text-[#FFCA4B] font-bold font-[poppins] gap-1">Learn More <ArrowRight className=" group-hover:translate-x-3 transition-all w-5"/> </button>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div className=" h-fit">
+                      <img src={heroimg} alt="" className=" rounded-lg lg:w-[] md:w-[]"/>
+                    </div>
                   </div>
                 </div>
-                <div className="">
-                  <div className=" h-fit">
-                    <img src={heroimg} alt="" className=" rounded-lg lg:w-[] md:w-[]"/>
+                {/* badge container  */}
+                <div className=" absolute md:top-10 md:left-52 lg:top-10 lg:left-28 top-80">
+                  <div className=" flex items-center gap-4 px-4 py-4 bg-white shadow-2xl rounded-lg">
+                    <img src={badge} alt="" />
+                    <p className=" text-wrap font-[poppins] text-sm">Congratulations! You’ve <br /> earned a certification.</p>
                   </div>
                 </div>
               </div>
