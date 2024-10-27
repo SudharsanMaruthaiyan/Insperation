@@ -13,7 +13,7 @@ export const FindCourseCardApi = [
         student:"0 Students",
         lesson:"11 Lessons",
         price:"$69.00",
-        cart:"Add to cart"
+        cart:"Enroll"
     },
     {
         float:"FEATURED",
@@ -26,7 +26,7 @@ export const FindCourseCardApi = [
         student:"0 Students",
         lesson:"11 Lessons",
         price:"$69.00",
-        cart:"Add to cart"
+        cart:"Enroll"
     },
     {
         float:"FEATURED",
@@ -39,7 +39,7 @@ export const FindCourseCardApi = [
         student:"0 Students",
         lesson:"11 Lessons",
         price:"$69.00",
-        cart:"Add to cart"
+        cart:"Enroll"
     },
     {
         float:"FEATURED",
@@ -52,7 +52,7 @@ export const FindCourseCardApi = [
         student:"0 Students",
         lesson:"11 Lessons",
         price:"$69.00",
-        cart:"Add to cart"
+        cart:"Enroll"
     },
     {
         float:"FEATURED",
@@ -65,7 +65,7 @@ export const FindCourseCardApi = [
         student:"0 Students",
         lesson:"11 Lessons",
         price:"$69.00",
-        cart:"Add to cart"
+        cart:"Enroll"
     },
     {
         float:"FEATURED",
@@ -78,6 +78,6 @@ export const FindCourseCardApi = [
         student:"0 Students",
         lesson:"11 Lessons",
         price:"$69.00",
-        cart:"Add to cart"
+        cart:"Enroll"
     },
 ]

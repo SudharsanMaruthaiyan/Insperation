@@ -1,15 +1,15 @@
-import { Folders,UserRound, Heart, Star, ArrowRight } from "lucide-react"
+import { Folders,UserRound, Heart, Star, ArrowRight,Share } from "lucide-react"
 import { course1 } from "../../../assets/Api/image"
 
 const FindCourseCard = ({float,name,lesson,price,cart,rating,student,profile,image,domain,title}) => {
   return (
     <>
         <div>
-            <div className=" pt-32">
-                <div className=" bg-white shadow-2xl border rounded-3xl px-8 pb-4 lg:pt-24 xl:pt-44 2xl:pt-56 pt-[120px] relative">
-                    <div className=" absolute -top-36 left-0 ">
-                        <div className=" relative p-3">
-                            <img src={image} alt="Course_image" className=" rounded-2xl" />
+            <div className="">
+                <div className=" bg-white shadow-2xl border rounded-3xl pb-4 relative">
+                    <div className=" relative p-3">
+                        <div className=" relative w-full">
+                            <img src={image} alt="Course_image" className=" rounded-2xl w-full" />
                             <p className=" bg-[#2682F9] text-white px-2 py-1 w-fit rounded-md font-bold  font-[poppins] text-sm absolute top-8 left-8">{float}</p>
                         </div>
                         <div className=" absolute w-full -bottom-1">
@@ -25,17 +25,17 @@ const FindCourseCard = ({float,name,lesson,price,cart,rating,student,profile,ima
                                     <p>{rating}</p>
                                 </div>
                                 <div className=" hover:cursor-pointer">
-                                    <Heart className=" w-9 h-9 bg-white shadow-lg border p-2 rounded-full"/>    
+                                    <Share className=" w-9 h-9 bg-white shadow-lg border p-2 rounded-full"/>    
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div className=" flex items-center gap-2">
-                        <img src={profile} alt="Course_profile_image" className=" rounded-full w-8" />
-                        <p className=" font-[poppins]"> <span className=" text-[#2682f9]">{name}</span> {domain}</p>
-                    </div>
-                    <div>
+                    <div className=" px-8 pt-6">
+                        <div className=" flex items-center gap-2">
+                            <img src={profile} alt="Course_profile_image" className=" rounded-full w-8" />
+                            <p className=" font-[poppins]"> <span className=" text-[#2682f9]">{name}</span> {domain}</p>
+                        </div>
                         <h1 className=" font-[poppins] md:text-xl text-lg font-bold py-3">{title}</h1>
                         <div className=" flex items-center gap-4">
                             <div className=" flex items-center gap-1">

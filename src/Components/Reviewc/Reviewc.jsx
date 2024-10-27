@@ -1,5 +1,5 @@
 import { Cuboid, Star } from "lucide-react"
-
+import CountUp from 'react-countup';
 
 const Reviewc = () => {
   return (
@@ -12,7 +12,13 @@ const Reviewc = () => {
                 </div>
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-8 shadow-2xl border p-5 rounded-lg'>
                     <div className=" flex flex-col justify-center items-center">
-                        <h1 className=" font-[poppins] text-[35px] font-bold">4.8</h1>
+                        <h1 className=" font-[poppins] text-[35px] font-bold"><CountUp 
+                        end={4.8} 
+                        decimals={1}
+                        duration={2.5}
+                        decimal="."
+                        />
+                    </h1>
                         <div className=" flex items-center gap-1">
                             <Star className=" w-4 fill-[#FF9800] stroke-[#FF9800]"/>
                             <Star className=" w-4 fill-[#FF9800] stroke-[#FF9800]"/>
@@ -20,7 +26,12 @@ const Reviewc = () => {
                             <Star className=" w-4 fill-[#FF9800] stroke-[#FF9800]"/>
                             <Star className=" w-4 fill-[#FF9800] stroke-[#FF9800]"/>
                         </div>
-                        <p className=" font-[poppins] font-medium">3,272 Rating</p>
+                        <p className=" font-[poppins] font-medium"> <CountUp 
+                        end={3272} 
+                        duration={3}
+                        separator=", "
+                        /> + Rating
+                    </p>
                     </div>
                     <div className=" flex items-center gap-4">
                         <div className=" bg-[#FFEDE7] p-2 rounded-full border-dotted border-2 border-[#FF5722]">
@@ -45,7 +56,12 @@ const Reviewc = () => {
                         </div>
                         <div>
                             <h1 className="  font-[poppins] font-bold text-slate-800 lg:text-lg text-base text-wrap">
-                            200+ Cources <br /> Students</h1>
+                            <CountUp 
+                                end={200}
+                                duration={2}
+                                separator=","
+                            /> + Courses
+                            <br /> Students</h1>
                         </div>
                     </div>
                     <div className=" flex items-center gap-4">
@@ -54,7 +70,12 @@ const Reviewc = () => {
                         </div>
                         <div>
                             <h1 className="  font-[poppins] font-bold text-slate-800 lg:text-lg text-base text-wrap">
-                            800k+ Enrolled<br /> Available</h1>
+                            <CountUp 
+                                end={800}
+                                duration={2}
+                                separator=","
+                            />k+ Enrolled
+                            <br /> Available</h1>
                         </div>
                     </div>
                 </div>
